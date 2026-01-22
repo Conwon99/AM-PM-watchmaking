@@ -13,8 +13,7 @@ export const FooterSection = () => {
               <Logo />
               <div className="box-border caret-transparent mt-6">
                 <div className="text-[15px] box-border caret-transparent leading-6 text-white/80 md:text-base">
-                  Master watchmakers dedicated to preserving the art of timekeeping. 
-                  Expert restoration, repair, and custom timepiece creation since 2015.
+                  Independent watchmaking workshop in Troon, South Ayrshire. Specialising in luxury watch repair and servicing for Omega, Rolex, TAG Heuer, Cartier, Breitling, Seiko, and more. Over 10 years of professional horological experience.
                 </div>
               </div>
             </div>
@@ -25,7 +24,7 @@ export const FooterSection = () => {
           <div className="box-border caret-transparent border-t border-white/20 mt-10 pt-6 md:mt-14 md:pt-8">
             <div className="box-border caret-transparent gap-x-4 flex flex-col gap-y-4 md:flex-row md:justify-between md:gap-y-0">
               <div className="text-[15px] box-border caret-transparent leading-6 text-white/60 md:text-base">
-                © {new Date().getFullYear()} Professional Watch Repair Troon. All rights reserved.
+                © {new Date().getFullYear()} AM|PM Watch Repair. All rights reserved.
               </div>
               <div className="box-border caret-transparent gap-x-6 flex gap-y-0">
                 <a

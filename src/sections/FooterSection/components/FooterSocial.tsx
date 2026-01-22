@@ -2,30 +2,20 @@ export const FooterSocial = () => {
   return (
     <div className="box-border caret-transparent basis-[100%] md:basis-[0%] md:grow md:max-w-[250px]">
       <div className="text-lg font-medium box-border caret-transparent leading-7 mb-4 md:text-xl md:mb-6">
-        Message Us
+        Contact & Info
       </div>
       <div className="box-border caret-transparent gap-x-0 flex flex-col gap-y-3">
         <div className="text-[15px] box-border caret-transparent leading-6 text-white/80 md:text-base">
-          <div className="font-medium text-white mb-1">Phone</div>
-          <a
-            href="tel:+1234567890"
-            className="hover:text-white"
-          >
-            +1 (234) 567-890
-          </a>
+          <div className="font-medium text-white mb-1">Location</div>
+          <div>Troon, South Ayrshire<br />United Kingdom</div>
         </div>
         <div className="text-[15px] box-border caret-transparent leading-6 text-white/80 md:text-base">
-          <div className="font-medium text-white mb-1">Email</div>
-          <a
-            href="mailto:info@watchrepairtroon.com"
-            className="hover:text-white"
-          >
-            info@watchrepairtroon.com
-          </a>
+          <div className="font-medium text-white mb-1">Turnaround Time</div>
+          <div>Typically 3-5 weeks<br />Direct communication with watchmaker</div>
         </div>
         <div className="text-[15px] box-border caret-transparent leading-6 text-white/80 md:text-base">
-          <div className="font-medium text-white mb-1">Address</div>
-          <div>123 Watchmaker Street<br />Craft District, NY 10001</div>
+          <div className="font-medium text-white mb-1">Warranty</div>
+          <div>12 month warranty included<br />with all watch services</div>
         </div>
         <div className="box-border caret-transparent gap-x-4 flex gap-y-0 mt-4">
           <a

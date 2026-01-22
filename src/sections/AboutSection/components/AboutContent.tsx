@@ -11,7 +11,7 @@ export const AboutContent = () => {
           <div className="box-border caret-transparent border-8 border-black p-1 bg-[#D4AF37]">
             <div className="box-border caret-transparent overflow-hidden">
               <img
-                src="/watch1.png"
+                src="/about1.jpeg"
                 alt="Professional Watch Repair Troon - About Us"
                 className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
               />

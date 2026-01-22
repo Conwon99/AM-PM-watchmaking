@@ -25,18 +25,33 @@ export const QuoteForm = () => {
     setIsSubmitting(true);
     setSubmitStatus("idle");
 
-    // Simulate form submission
-    // In a real application, you would send this to your backend
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setSubmitStatus("success");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        serviceType: "",
-        description: "",
+      const response = await fetch("https://formspree.io/f/xvzzebzl", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          serviceType: formData.serviceType,
+          description: formData.description,
+        }),
       });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          serviceType: "",
+          description: "",
+        });
+      } else {
+        setSubmitStatus("error");
+      }
     } catch (error) {
       setSubmitStatus("error");
     } finally {
@@ -46,7 +61,7 @@ export const QuoteForm = () => {
 
   return (
     <div className="w-full max-w-[700px]">
-      <form onSubmit={handleSubmit} className="bg-black rounded-xl p-6 md:p-8 shadow-xl">
+      <form onSubmit={handleSubmit} action="https://formspree.io/f/xvzzebzl" method="POST" className="bg-black rounded-xl p-6 md:p-8 shadow-xl">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6">
           <div className="md:col-span-2">
             <label htmlFor="name" className="block text-sm font-medium text-white mb-2">

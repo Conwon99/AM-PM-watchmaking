@@ -2,7 +2,7 @@ export const CoreValuesImage = () => {
   return (
     <div className="relative box-border caret-transparent blur-0 basis-auto grow-0 shrink-0 w-full max-w-none overflow-hidden rounded-lg md:basis-[0%] md:grow md:shrink md:h-auto md:max-w-[520px]">
       <img
-        src="/ampm1.jpeg"
+        src="/about1.jpeg"
         sizes="(max-width: 767px) 100vw, 519.982666015625px"
         alt="AM|PM Watch Repair - About Us"
         className="box-border caret-transparent inline-block w-full h-auto max-w-full object-contain md:h-full md:object-cover"

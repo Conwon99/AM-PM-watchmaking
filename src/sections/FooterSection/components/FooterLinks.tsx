@@ -24,10 +24,10 @@ export const FooterLinks = () => {
           Services
         </a>
         <a
-          href="/gallery"
+          href="/services"
           className="text-[15px] box-border caret-transparent leading-6 text-white/80 hover:text-white md:text-base"
         >
-          Gallery
+          Services
         </a>
         <a
           href="/contact"

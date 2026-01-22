@@ -2,7 +2,7 @@ export const AboutPageMission = () => {
   return (
     <section className="box-border caret-transparent py-[60px] md:py-[100px]">
       <div className="box-border caret-transparent max-w-[1204px] mx-auto px-5 md:px-8">
-        <div className="box-border caret-transparent gap-x-7 flex flex-col justify-between gap-y-7 md:gap-x-10 md:flex-row md:gap-y-10">
+        <div className="box-border caret-transparent gap-x-7 flex flex-col justify-center md:justify-between gap-y-7 md:gap-x-10 md:flex-row md:gap-y-10">
           <div className="box-border caret-transparent blur-0 basis-[0%] grow max-w-none md:max-w-[544px]">
             <div className="box-border caret-transparent inline-block border border-neutral-200 px-3 py-1 rounded-[1000px] border-solid">
               <div className="font-medium box-border caret-transparent leading-[22px]">
@@ -26,9 +26,9 @@ export const AboutPageMission = () => {
               </div>
             </div>
           </div>
-          <div className="box-border caret-transparent blur-0 h-[300px] overflow-hidden rounded-2xl md:h-[400px] md:w-[500px]">
+          <div className="box-border caret-transparent blur-0 h-[300px] w-full overflow-hidden rounded-2xl md:h-[400px] md:w-[500px]">
             <img
-              src="/ampm1.jpeg"
+              src="/about1.jpeg"
               sizes="(max-width: 767px) 100vw, 500px"
               alt="Watch Repair Mission"
               className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
