@@ -6,7 +6,7 @@ import { CoreValuesSection } from '../sections/CoreValuesSection';
 import { ServicePageServices } from '../sections/ServicePageServices';
 import { GallerySection } from '../sections/GallerySection';
 import { ProcessSection } from '../sections/ProcessSection';
-import { TestimonialsSection } from '../sections/TestimonialsSection';
+import { FAQSection } from '../sections/FAQSection';
 import { QuoteSection } from '../sections/QuoteSection';
 import { FooterSection } from '../sections/FooterSection';
 ---
@@ -20,8 +20,8 @@ import { FooterSection } from '../sections/FooterSection';
       <ServicePageServices client:load />
       <GallerySection client:load />
       <ProcessSection client:load />
-      <TestimonialsSection client:load />
-      <QuoteSection client:load />
+      <FAQSection client:load compact={true} />
+      <QuoteSection client:load showTerms={false} />
       <FooterSection client:load />
     </main>
   </div>

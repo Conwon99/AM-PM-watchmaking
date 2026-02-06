@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../sections/Navbar';
+import { QuoteSection } from '../sections/QuoteSection';
+import { FooterSection } from '../sections/FooterSection';
+---
+
+<Layout>
+  <div class="min-h-screen bg-neutral-100 font-figtree text-black text-sm leading-5 antialiased">
+    <Navbar client:load />
+    <main class="pt-0">
+      <section class="relative bg-cover bg-center bg-no-repeat py-20 md:py-32" style="background-image: url('/hero-background.jpeg');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative max-w-[1204px] mx-auto px-5 md:px-8">
+          <div class="box-border caret-transparent gap-x-4 flex flex-col gap-y-4 text-center">
+            <div class="box-border caret-transparent flex blur-0 justify-center">
+              <div class="box-border caret-transparent border border-white/30 px-3 py-1 rounded-[1000px] border-solid">
+                <div class="font-medium box-border caret-transparent leading-[22px] text-white">
+                  Legal
+                </div>
+              </div>
+            </div>
+            <div class="box-border caret-transparent blur-0 max-w-[680px] mx-auto">
+              <h1 class="text-[44px] font-medium box-border caret-transparent tracking-[-1.44px] leading-[52px] md:text-7xl md:leading-[80px] text-white">
+                Privacy{" "}
+                <span class="text-[44px] box-border caret-transparent leading-[52px] font-figtree md:text-7xl md:leading-[80px]">
+                  Policy
+                </span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="box-border caret-transparent py-[60px] md:py-[100px]">
+        <div class="box-border caret-transparent max-w-[1204px] mx-auto px-5 md:px-8">
+          <div class="box-border caret-transparent max-w-[800px] mx-auto">
+            <div class="box-border caret-transparent space-y-6">
+              <div class="box-border caret-transparent">
+                <h2 class="text-xl font-medium box-border caret-transparent mb-3 md:text-2xl">
+                  Who we are
+                </h2>
+                <p class="text-base box-border caret-transparent leading-6 text-neutral-700">
+                  AM|PM Watch Repair ("we", "our", "us") operates this website. We are a watch repair and restoration business based in Troon, South Ayrshire.
+                </p>
+              </div>
+
+              <div class="box-border caret-transparent">
+                <h2 class="text-xl font-medium box-border caret-transparent mb-3 md:text-2xl">
+                  Information we collect
+                </h2>
+                <p class="text-base box-border caret-transparent leading-6 text-neutral-700">
+                  We may collect your name, email address, phone number, postal address, and any details you provide when you contact us, request a quote, or use our contact form. We do not collect sensitive personal data unless you choose to provide it.
+                </p>
+              </div>
+
+              <div class="box-border caret-transparent">
+                <h2 class="text-xl font-medium box-border caret-transparent mb-3 md:text-2xl">
+                  How we use your information
+                </h2>
+                <p class="text-base box-border caret-transparent leading-6 text-neutral-700">
+                  We use your information only to respond to enquiries, provide quotes, carry out repairs and services you have requested, and to communicate about your watch or order. We do not sell or share your data with third parties for marketing.
+                </p>
+              </div>
+
+              <div class="box-border caret-transparent">
+                <h2 class="text-xl font-medium box-border caret-transparent mb-3 md:text-2xl">
+                  Data retention
+                </h2>
+                <p class="text-base box-border caret-transparent leading-6 text-neutral-700">
+                  We keep your contact and transaction details only for as long as needed to fulfil our services and for legitimate business and legal purposes (e.g. warranty, accounting).
+                </p>
+              </div>
+
+              <div class="box-border caret-transparent">
+                <h2 class="text-xl font-medium box-border caret-transparent mb-3 md:text-2xl">
+                  Your rights
+                </h2>
+                <p class="text-base box-border caret-transparent leading-6 text-neutral-700">
+                  You have the right to ask what data we hold about you, to have it corrected, or to request its deletion, subject to legal obligations. Contact us using the details on this website to make a request.
+                </p>
+              </div>
+
+              <div class="box-border caret-transparent">
+                <h2 class="text-xl font-medium box-border caret-transparent mb-3 md:text-2xl">
+                  Cookies and website use
+                </h2>
+                <p class="text-base box-border caret-transparent leading-6 text-neutral-700">
+                  This site may use essential cookies for functionality. We do not use tracking or advertising cookies. You can adjust your browser settings to manage cookies.
+                </p>
+              </div>
+
+              <div class="box-border caret-transparent">
+                <h2 class="text-xl font-medium box-border caret-transparent mb-3 md:text-2xl">
+                  Changes to this policy
+                </h2>
+                <p class="text-base box-border caret-transparent leading-6 text-neutral-700">
+                  We may update this privacy policy from time to time. The current version will always be available on this page. If you have questions, please get in touch via our contact page.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <QuoteSection client:load showTerms={false} />
+      <FooterSection client:load />
+    </main>
+  </div>
+</Layout>

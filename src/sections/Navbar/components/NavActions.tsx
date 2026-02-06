@@ -1,7 +1,7 @@
 export const NavActions = () => {
   return (
     <div className="items-center box-border caret-transparent flex basis-auto grow-0 shrink-0 justify-end justify-self-end md:basis-[0%] md:grow md:shrink">
-      <div className="items-center box-border caret-transparent gap-x-1 hidden min-h-0 min-w-0 gap-y-1 md:flex md:min-h-[auto] md:min-w-[auto]">
+      <div className="items-center box-border caret-transparent gap-x-3 hidden min-h-0 min-w-0 gap-y-1 md:flex md:min-h-[auto] md:min-w-[auto]">
         <div className="box-border caret-transparent hidden">
           <div className="box-border caret-transparent flex">
             <a
@@ -48,7 +48,22 @@ export const NavActions = () => {
           </div>
         </div>
         <div className="box-border caret-transparent min-h-0 min-w-0 md:min-h-[auto] md:min-w-[auto]">
-          <div className="box-border caret-transparent flex">
+          <div className="box-border caret-transparent flex items-center gap-x-3">
+            <a
+              href="https://www.instagram.com/ampmwatch_repair/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="AM/PM Watch Repair on Instagram"
+              className="text-black box-border caret-transparent hover:text-cta-dark"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="h-5 w-5 fill-current"
+              >
+                <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm10.5 1.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
+              </svg>
+            </a>
             <a
               href="/contact"
               className="text-black items-center bg-cta box-border caret-transparent gap-x-3 flex max-w-full min-h-0 min-w-0 gap-y-3 text-center border px-4 py-2 rounded-[100px] border-solid border-transparent md:min-h-[auto] md:min-w-[auto] hover:bg-white hover:border-cta-dark"

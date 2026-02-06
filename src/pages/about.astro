@@ -3,9 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Navbar } from '../sections/Navbar';
 import { AboutPageHero } from '../sections/AboutPageHero';
 import { AboutPageAbout } from '../sections/AboutPageAbout';
-import { AboutPageMission } from '../sections/AboutPageMission';
 import { ProcessSection } from '../sections/ProcessSection';
-import { CoreValuesSection } from '../sections/CoreValuesSection';
 import { QuoteSection } from '../sections/QuoteSection';
 import { FooterSection } from '../sections/FooterSection';
 ---
@@ -16,10 +14,8 @@ import { FooterSection } from '../sections/FooterSection';
     <main class="pt-0">
       <AboutPageHero client:load />
       <AboutPageAbout client:load />
-      <AboutPageMission client:load />
       <ProcessSection client:load />
-      <CoreValuesSection client:load />
-      <QuoteSection client:load />
+      <QuoteSection client:load showTerms={false} />
       <FooterSection client:load />
     </main>
   </div>

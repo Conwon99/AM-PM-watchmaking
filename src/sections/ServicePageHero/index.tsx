@@ -1,16 +1,16 @@
 export const ServicePageHero = () => {
   return (
-    <section className="box-border caret-transparent pt-[60px] md:pt-[100px]">
+    <section className="box-border caret-transparent pt-[120px] md:pt-[150px]">
       <div className="box-border caret-transparent max-w-[1204px] mx-auto px-5 md:px-8">
         <div className="box-border caret-transparent pb-[60px] md:pb-[100px]">
           <div className="items-start box-border caret-transparent gap-x-7 flex flex-col justify-between gap-y-7 md:items-center md:gap-x-10 md:flex-row md:gap-y-10">
             <div className="items-start box-border caret-transparent gap-x-4 flex blur-0 flex-col max-w-none gap-y-4 md:max-w-[555px]">
               <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
-                [Services]
+                [Services & Pricing]
               </div>
               <h2 className="text-[44px] font-medium box-border caret-transparent tracking-[-1.44px] leading-[52px] md:text-7xl md:leading-[80px]">
                 Expert Watch{" "}
-                <span className="text-[44px] italic box-border caret-transparent leading-[52px] font-playfair_display md:text-7xl md:leading-[80px]">
+                <span className="text-[44px] box-border caret-transparent leading-[52px] font-figtree md:text-7xl md:leading-[80px]">
                   Repair Services
                 </span>
               </h2>

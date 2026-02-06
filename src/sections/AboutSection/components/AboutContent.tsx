@@ -20,7 +20,7 @@ export const AboutContent = () => {
         </div>
         <div className="box-border caret-transparent gap-x-[18px] flex flex-col max-w-[842px] gap-y-[18px] md:gap-x-5 md:gap-y-5">
           <div className="text-[22px] font-medium box-border caret-transparent leading-[30px] md:text-[28px] md:leading-9">
-            <span className="text-[22px] italic box-border caret-transparent leading-[30px] font-playfair_display md:text-[28px] md:leading-9">
+            <span className="text-[22px] box-border caret-transparent leading-[30px] font-figtree md:text-[28px] md:leading-9">
               AM|PM Watch Repair{" "}
             </span>
             is an independent watchmaking workshop specialising in the repair and servicing of a wide range of luxury watches.
@@ -38,7 +38,7 @@ export const AboutContent = () => {
             Our workshop is based in the popular seaside town of Troon, South Ayrshire, and we receive watches for repair from clients across the UK.
           </div>
           <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
-            As watch enthusiasts ourselves, we fully appreciate the value, and often deep sentimental importance that watches can hold. Every timepiece is treated with the utmost care and respect.
+            As watch enthusiasts ourselves, we fully appreciate the value, and often deep sentimental importance that watches can hold. Every watch is treated with the utmost care and respect.
           </div>
           <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
             Being fully independent means you deal directly with the watchmaker—no intermediaries—allowing for clear communication, transparent explanations of recommended work, and consistently tighter turnaround times, typically 3–5 weeks.

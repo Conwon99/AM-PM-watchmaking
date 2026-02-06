@@ -12,10 +12,7 @@ export const TermsAndConditions = () => {
               Estimates & Quotes
             </h4>
             <p className="text-[15px] leading-6 text-white md:text-base">
-              Estimates are always free (please enquire by email or by filling in the contact form). Before beginning any work a free fixed price quote will be issued, this price will not change. If proceeded, we will then issue a timescale for the repair and begin the work.
-            </p>
-            <p className="text-[15px] leading-6 text-white mt-3 md:text-base">
-              If the customer decides to decline the quote then the watch will be safely returned.
+              Estimates are always free, please enquire by email or by filling in the contact form below. On receipt of the watch, a free fixed price quote will be issued after we conduct in-house diagnosis. If the customer decides to decline the quote, the customer will only be charged the return postage costs.
             </p>
           </div>
 
@@ -33,7 +30,7 @@ export const TermsAndConditions = () => {
               Warranties on Watch Repairs
             </h4>
             <p className="text-[15px] leading-6 text-white md:text-base">
-              If servicing your watch, we offer a 12 month warranty included with the service. Complete service and any parts installed in conjunction with that service are warranted for twelve months.
+              A 12 month warranty is included with all services, including replacement parts associated with the service.
             </p>
             <p className="text-[15px] leading-6 text-white mt-3 md:text-base">
               Watches that have not been serviced are not warranted. This includes what is referred to as "partial repairs", such as works carried out on stem & crowns, straps, bezels, hand & dial repairs and glass replacements.

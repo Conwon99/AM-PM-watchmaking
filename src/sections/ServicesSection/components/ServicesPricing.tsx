@@ -27,7 +27,7 @@ export const ServicesPricing = () => {
         <div className="bg-white box-border caret-transparent rounded-lg border border-neutral-200 overflow-hidden md:overflow-visible">
           <div className="relative box-border caret-transparent h-48 overflow-hidden rounded-t-lg">
             <img
-              src="/w3.jpeg"
+              src="/part-repairs.jpeg"
               alt="Part Repairs"
               className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
             />
@@ -64,7 +64,7 @@ export const ServicesPricing = () => {
         <div className="bg-white box-border caret-transparent rounded-lg border border-neutral-200 overflow-hidden md:overflow-visible">
           <div className="relative box-border caret-transparent h-48 overflow-hidden rounded-t-lg">
             <img
-              src="/w4.jpeg"
+              src="/servicing.jpeg"
               alt="Servicing"
               className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
             />

@@ -13,14 +13,14 @@ export const TestimonialsSection = () => {
                 </div>
               </div>
               <h2 className="text-3xl font-medium box-border caret-transparent tracking-[-0.52px] leading-[35px] md:text-[52px] md:leading-[62px]">
-                <span className="text-3xl italic box-border caret-transparent leading-[35px] font-playfair_display md:text-[52px] md:leading-[62px]">What Our Clients Say</span>{" "}
+                <span className="text-3xl box-border caret-transparent leading-[35px] font-figtree md:text-[52px] md:leading-[62px]">What Our Clients Say</span>{" "}
                 About Our Service
               </h2>
             </div>
             <div className="box-border caret-transparent blur-0 max-w-none md:max-w-[360px]">
               <div className="text-gray-700 box-border caret-transparent">
                 <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
-                  Trusted by watch enthusiasts and collectors across the UK. Our clients appreciate our expertise, attention to detail, and commitment to preserving their timepieces.
+                  Trusted by watch enthusiasts and collectors across the UK. Our clients appreciate our expertise, attention to detail, and commitment to preserving their watches.
                 </div>
               </div>
             </div>

@@ -15,14 +15,16 @@ export const GallerySection = () => {
             </div>
             <div className="box-border caret-transparent blur-0 max-w-[680px] text-center mx-auto">
               <h2 className="text-3xl font-medium box-border caret-transparent tracking-[-0.52px] leading-[35px] md:text-[52px] md:leading-[62px]">
-                From Vintage Timepieces to{" "}
-                <span className="text-3xl italic box-border caret-transparent leading-[35px] font-playfair_display md:text-[52px] md:leading-[62px]">
-                  Masterful Restorations
-                </span>
+                Need a watch repaired? We've got you covered
               </h2>
             </div>
           </div>
           <GalleryGrid />
+          <div className="box-border caret-transparent mt-8 text-center">
+            <p className="text-[15px] box-border caret-transparent leading-6 text-gray-500 italic md:text-base">
+              All imagery shown on this website is our own and is of watches we have worked on
+            </p>
+          </div>
         </div>
       </div>
     </section>

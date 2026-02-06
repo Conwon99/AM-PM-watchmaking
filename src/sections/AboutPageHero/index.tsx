@@ -1,42 +1,15 @@
 export const AboutPageHero = () => {
   return (
-    <section className="box-border caret-transparent overflow-hidden pt-[60px] md:pt-[100px]">
+    <section className="box-border caret-transparent overflow-hidden pt-[120px] md:pt-[150px]">
       <div className="box-border caret-transparent max-w-[1204px] mx-auto px-5 md:px-8">
         <div className="box-border caret-transparent pb-[60px] md:pb-[100px]">
           <div className="items-start box-border caret-transparent gap-x-7 flex flex-col justify-between gap-y-7 md:items-end md:gap-x-10 md:flex-row md:gap-y-10">
             <div className="items-start box-border caret-transparent gap-x-4 flex blur-0 flex-col max-w-[740px] gap-y-4">
-              <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
-                [About]
-              </div>
               <h2 className="text-[44px] font-medium box-border caret-transparent tracking-[-1.44px] leading-[52px] md:text-7xl md:leading-[80px]">
-                Masterful Craftsmanship in{" "}
-                <span className="text-[44px] italic box-border caret-transparent leading-[52px] font-playfair_display md:text-7xl md:leading-[80px]">
-                  Every Timepiece.
-                </span>
+                About Us
               </h2>
             </div>
             <div className="box-border caret-transparent gap-x-[18px] flex blur-0 flex-col max-w-[340px] gap-y-[18px] md:gap-x-5 md:gap-y-5">
-              <a
-                href="/services"
-                className="text-white items-center bg-cta box-border caret-transparent gap-x-5 flex max-w-full gap-y-5 text-center border pl-6 pr-1 py-1 rounded-[100px] border-solid border-transparent hover:bg-white hover:text-cta hover:border-cta"
-              >
-                <div className="relative box-border caret-transparent overflow-hidden">
-                  <div className="box-border caret-transparent">
-                    <div className="relative text-sm font-medium box-border caret-transparent leading-5 z-[2] md:text-base md:leading-6">
-                      Our Services
-                    </div>
-                  </div>
-                </div>
-                <div className="text-cta items-center bg-white box-border caret-transparent flex h-12 justify-center w-12 overflow-hidden rounded-[50%]">
-                  <div className="box-border caret-transparent h-3.5 w-3.5">
-                    <img
-                      src="https://c.animaapp.com/mhnzg6knJo6lE7/assets/icon-5.svg"
-                      alt="Icon"
-                      className="box-border caret-transparent h-full w-full"
-                    />
-                  </div>
-                </div>
-              </a>
               <div className="box-border caret-transparent flex">
                 <a
                   href="/contact"

@@ -9,6 +9,8 @@ export const QuoteForm = () => {
     description: "",
   });
 
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -20,24 +22,56 @@ export const QuoteForm = () => {
     }));
   };
 
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      // Validate file type
+      if (!file.type.startsWith("image/")) {
+        alert("Please select an image file");
+        return;
+      }
+      // Validate file size (max 10MB)
+      if (file.size > 10 * 1024 * 1024) {
+        alert("Image size must be less than 10MB");
+        return;
+      }
+      setImageFile(file);
+      // Create preview
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreview(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const removeImage = () => {
+    setImageFile(null);
+    setImagePreview(null);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus("idle");
 
     try {
+      // Use FormData to support file uploads
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("serviceType", formData.serviceType);
+      formDataToSend.append("description", formData.description);
+      formDataToSend.append("website", "https://ampmwatchrepair.com/");
+      
+      if (imageFile) {
+        formDataToSend.append("image", imageFile);
+      }
+
       const response = await fetch("https://formspree.io/f/xvzzebzl", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          serviceType: formData.serviceType,
-          description: formData.description,
-        }),
+        body: formDataToSend,
       });
 
       if (response.ok) {
@@ -49,6 +83,13 @@ export const QuoteForm = () => {
           serviceType: "",
           description: "",
         });
+        setImageFile(null);
+        setImagePreview(null);
+        // Reset file input
+        const fileInput = document.getElementById("image") as HTMLInputElement;
+        if (fileInput) {
+          fileInput.value = "";
+        }
       } else {
         setSubmitStatus("error");
       }
@@ -147,6 +188,42 @@ export const QuoteForm = () => {
               className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-cta focus:border-cta outline-none transition resize-none placeholder:text-gray-500"
               placeholder="Please describe the issue with your watch or the service you require..."
             />
+          </div>
+
+          <div className="md:col-span-2">
+            <label htmlFor="image" className="block text-sm font-medium text-white mb-2">
+              Upload Image (Optional)
+            </label>
+            <div className="space-y-3">
+              <input
+                type="file"
+                id="image"
+                name="image"
+                accept="image/*"
+                onChange={handleImageChange}
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-cta focus:border-cta outline-none transition file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-cta file:text-white hover:file:bg-cta-dark file:cursor-pointer cursor-pointer"
+              />
+              {imagePreview && (
+                <div className="relative">
+                  <img
+                    src={imagePreview}
+                    alt="Preview"
+                    className="w-full h-48 object-cover rounded-lg border border-gray-700"
+                  />
+                  <button
+                    type="button"
+                    onClick={removeImage}
+                    className="absolute top-2 right-2 bg-red-600 hover:bg-red-700 text-white rounded-full p-2 text-sm font-medium transition"
+                    aria-label="Remove image"
+                  >
+                    ×
+                  </button>
+                </div>
+              )}
+              <p className="text-xs text-gray-400">
+                Accepted formats: JPG, PNG, GIF. Max size: 10MB
+              </p>
+            </div>
           </div>
         </div>
 

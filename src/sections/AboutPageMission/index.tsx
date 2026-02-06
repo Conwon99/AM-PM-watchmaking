@@ -12,14 +12,20 @@ export const AboutPageMission = () => {
             <div className="box-border caret-transparent mt-[18px] mb-4 md:mt-5">
               <h2 className="text-3xl font-medium box-border caret-transparent tracking-[-0.52px] leading-[35px] md:text-[52px] md:leading-[62px]">
                 Preserving{" "}
-                <span className="text-3xl italic box-border caret-transparent leading-[35px] font-playfair_display md:text-[52px] md:leading-[62px]">
-                  Timepieces
+                <span className="text-3xl box-border caret-transparent leading-[35px] font-figtree md:text-[52px] md:leading-[62px]">
+                  Watches
                 </span>
               </h2>
             </div>
             <div className="text-gray-700 box-border caret-transparent space-y-4">
               <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
-                Based in Troon, South Ayrshire, we receive watches from clients across the UK. As watch enthusiasts ourselves, we treat every timepiece with the utmost care and respect. Being fully independent means you deal directly with the watchmaker—no intermediaries—allowing for clear communication and consistently tighter turnaround times, typically 3–5 weeks.
+                Our workshop is based in the popular seaside town of Troon, South Ayrshire, and we receive watches for repair from clients across the UK.
+              </div>
+              <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
+                As watch enthusiasts ourselves, we fully appreciate the value, and often deep sentimental importance that watches can hold. Every watch is treated with the utmost care and respect.
+              </div>
+              <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
+                Being fully independent means you deal directly with the watchmaker—no intermediaries—allowing for clear communication, transparent explanations of recommended work, and consistently tighter turnaround times, typically 3–5 weeks.
               </div>
               <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
                 Every gear, spring, and movement is handled with precision and pride. On time, accurate, and always professional. Authentic parts, traditional methods, timeless craftsmanship. Your satisfaction is our top priority—every watch, every time.

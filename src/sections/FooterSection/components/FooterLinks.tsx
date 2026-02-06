@@ -18,16 +18,16 @@ export const FooterLinks = () => {
           About Us
         </a>
         <a
-          href="/service"
+          href="/services"
           className="text-[15px] box-border caret-transparent leading-6 text-white/80 hover:text-white md:text-base"
         >
           Services
         </a>
         <a
-          href="/services"
+          href="/faq"
           className="text-[15px] box-border caret-transparent leading-6 text-white/80 hover:text-white md:text-base"
         >
-          Services
+          FAQ
         </a>
         <a
           href="/contact"

@@ -86,7 +86,7 @@ export const MobileCarousel = () => {
             <FeatureCard
               iconSrc="https://c.animaapp.com/mhnzg6knJo6lE7/assets/icon-14.svg"
               title="Utmost Care & Respect"
-              description="As watch enthusiasts ourselves, we fully appreciate the value and often deep sentimental importance that watches can hold. Every timepiece is treated with the utmost care and respect throughout the entire service process."
+              description="As watch enthusiasts ourselves, we fully appreciate the value and often deep sentimental importance that watches can hold. Every watch is treated with the utmost care and respect throughout the entire service process."
               variant=""
               iconVariant=""
             />

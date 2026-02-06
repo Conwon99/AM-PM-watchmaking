@@ -7,7 +7,7 @@ export type QuoteSectionProps = {
 
 export const QuoteSection = ({ showTerms = true }: QuoteSectionProps) => {
   return (
-    <section id="contact" className="relative bg-cover bg-center bg-no-repeat py-[60px] md:py-[100px]" style={{ backgroundImage: `url('/g1.jpeg')` }}>
+    <section id="contact" className="relative bg-cover bg-center bg-no-repeat pt-[120px] pb-[60px] md:pt-[150px] md:pb-[100px]" style={{ backgroundImage: `url('/g1.jpeg')` }}>
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative max-w-[1204px] mx-auto px-5 md:px-8">
         <div className="flex flex-col items-center gap-y-8 md:gap-y-12">
@@ -19,7 +19,7 @@ export const QuoteSection = ({ showTerms = true }: QuoteSectionProps) => {
             </div>
             <h2 className="text-[44px] font-medium text-white tracking-[-1.44px] leading-[52px] md:text-7xl md:leading-[80px]">
               Request a{" "}
-              <span className="text-[44px] italic leading-[52px] font-playfair_display md:text-7xl md:leading-[80px]">
+              <span className="text-[44px] leading-[52px] font-figtree md:text-7xl md:leading-[80px]">
                 Free Quote
               </span>
             </h2>

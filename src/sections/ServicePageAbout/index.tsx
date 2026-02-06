@@ -7,10 +7,10 @@ export const ServicePageAbout = () => {
             <div className="box-border caret-transparent max-w-[988px]">
               <div className="text-3xl font-medium box-border caret-transparent blur-0 tracking-[-0.52px] leading-[35px] md:text-[52px] md:leading-[62px]">
                 At{" "}
-                <span className="text-3xl italic box-border caret-transparent leading-[35px] font-playfair_display md:text-[52px] md:leading-[62px]">
+                <span className="text-3xl box-border caret-transparent leading-[35px] font-figtree md:text-[52px] md:leading-[62px]">
                   AM|PM Watch Repair{" "}
                 </span>
-                we've been restoring and repairing timepieces with masterful craftsmanship{" "}
+                we've been restoring and repairing watches with masterful craftsmanship{" "}
                 <span className="text-neutral-400 text-3xl box-border caret-transparent leading-[35px] md:text-[52px] md:leading-[62px]">
                   since 2015, with 100+ watches serviced
                 </span>
@@ -31,7 +31,7 @@ export const ServicePageAbout = () => {
               </div>
               <div className="text-gray-700 box-border caret-transparent">
                 <div className="text-[15px] box-border caret-transparent leading-6 md:text-base">
-                  We've been restoring and repairing timepieces with masterful craftsmanship since 2015. Whether it's regular servicing, vintage restoration, or complete watch overhauls — we're here to help preserve and enhance your timepieces.
+                  We've been restoring and repairing watches with masterful craftsmanship since 2015. Whether it's regular servicing, vintage restoration, or complete watch overhauls — we're here to help preserve and enhance your watches.
                 </div>
               </div>
             </div>

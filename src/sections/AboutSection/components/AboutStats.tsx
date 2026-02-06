@@ -7,7 +7,7 @@ export const AboutStats = () => {
         digits={["7", "8", "9", "0", "2"]}
         animationDigits={["2", "1", "2", "3", "4", "5"]}
         suffix="+"
-        title="Timepieces Restored"
+        title="Watches Restored"
         description="Bringing heritage watches back to life with masterful craftsmanship."
         hasMultipleRows={true}
       />
@@ -15,7 +15,7 @@ export const AboutStats = () => {
         digits={["7", "8", "9", "0", "2"]}
         animationDigits={["0", "1", "2", "3", "4", "5"]}
         suffix="+"
-        title="Master Watchmakers"
+        title="Welcome to AM/PM Watch Repair."
         description="Expert Watch Repair & Restoration Since 2015"
       />
       <StatCard
@@ -30,7 +30,7 @@ export const AboutStats = () => {
         animationDigits={["0", "1", "2", "3", "4", "5"]}
         suffix="+"
         title="Watch Brands Serviced"
-        description="Expert Care for All Major Timepiece Brands"
+        description="Expert Care for All Major Watch Brands"
         hasMultipleRows={false}
       />
     </div>

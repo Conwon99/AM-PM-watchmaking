@@ -16,13 +16,25 @@ export const ServicesSection = () => {
             <div className="box-border caret-transparent blur-0 max-w-[680px] text-center mx-auto">
               <h2 className="text-3xl font-medium box-border caret-transparent tracking-[-0.52px] leading-[35px] md:text-[52px] md:leading-[62px]">
                 Services Designed to Keep Your{" "}
-                <span className="text-3xl italic box-border caret-transparent leading-[35px] font-playfair_display md:text-[52px] md:leading-[62px]">
-                  Timepieces Ticking
+                <span className="text-3xl box-border caret-transparent leading-[35px] font-figtree md:text-[52px] md:leading-[62px]">
+                  Watches Ticking
                 </span>
               </h2>
+              <p className="text-[15px] box-border caret-transparent leading-6 text-gray-700 mt-3 md:text-base">
+                Fully trained, fully insured workshop & insured shipping up to £10,000
+              </p>
             </div>
           </div>
+
           <ServicesPricing />
+
+          {/* Services Not Exhaustive Notice */}
+          <div className="box-border caret-transparent mt-6 text-center max-w-[800px] mx-auto">
+            <p className="text-[15px] box-border caret-transparent leading-6 text-gray-700 md:text-base">
+              The services and repairs referred to above are not exhaustive, if you require a repair type not listed above please get in touch
+            </p>
+          </div>
+
           <div className="box-border caret-transparent flex justify-center mt-8">
             <div className="box-border caret-transparent flex">
               <a

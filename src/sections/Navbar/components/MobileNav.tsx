@@ -94,7 +94,7 @@ export const MobileNav = () => {
                   className="text-slate-900 box-border caret-transparent flex justify-center max-w-full text-center hover:text-cta"
                 >
                   <div className="text-slate-900 text-[15px] box-border caret-transparent leading-6">
-                    Services
+                    Services & Pricing
                   </div>
                 </a>
               </li>
@@ -106,6 +106,30 @@ export const MobileNav = () => {
                 >
                   <div className="text-slate-900 text-[15px] box-border caret-transparent leading-6">
                     Terms
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/faq"
+                  onClick={closeMenu}
+                  className="text-slate-900 box-border caret-transparent flex justify-center max-w-full text-center hover:text-cta"
+                >
+                  <div className="text-slate-900 text-[15px] box-border caret-transparent leading-6">
+                    FAQ
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ampmwatch_repair/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeMenu}
+                  className="text-slate-900 box-border caret-transparent flex justify-center max-w-full text-center hover:text-cta"
+                >
+                  <div className="text-slate-900 text-[15px] box-border caret-transparent leading-6">
+                    Instagram
                   </div>
                 </a>
               </li>

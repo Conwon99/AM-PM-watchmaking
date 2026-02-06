@@ -61,7 +61,6 @@ module.exports = {
         ],
         "geist": ["Geist", "ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
         "figtree": ["Figtree", "sans-serif"],
-        "playfair_display": ["Playfair Display", "serif"],
         "cormorant": ["Cormorant Garamond", "serif"],
         "lato": ["Lato", "sans-serif"]
       },

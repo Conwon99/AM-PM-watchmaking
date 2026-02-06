@@ -2,14 +2,11 @@ export const HeroText = () => {
   return (
     <div className="box-border caret-transparent basis-[0%] grow max-w-[650px]">
       <div className="box-border caret-transparent gap-x-4 flex flex-col gap-y-4">
-        <div className="text-base font-medium box-border caret-transparent blur-0 leading-[26px] md:text-lg font-figtree tracking-wider uppercase">
-          [Master Watchmaking]
-        </div>
         <h1 className="text-[44px] font-medium box-border caret-transparent blur-0 tracking-[-1.44px] leading-[52px] md:text-7xl md:leading-[80px]">
-          <span className="text-[44px] italic box-border caret-transparent leading-[52px] font-playfair_display md:text-7xl md:leading-[80px]">Professional</span> Watch Repair Troon
+          <span className="text-[44px] box-border caret-transparent leading-[52px] font-figtree md:text-7xl md:leading-[80px]">Professional</span> Watch Repair Troon
         </h1>
         <div className="text-base box-border caret-transparent blur-0 leading-[26px] md:text-lg font-figtree">
-          Expert Watch Repair &amp; Restoration Services in Troon, South Ayrshire. From glass replacements to complete mechanical services, we specialize in luxury watch repair and servicing for all major brands — Because Every Watch Deserves Expert Care
+          Expert Watch Repair &amp; Restoration Services in Troon. 10+ Years Experience. Fully trained, fully insured workshop &amp; insured shipping up to £10,000
         </div>
       </div>
       <div className="items-center box-border caret-transparent gap-x-5 flex blur-0 flex-wrap gap-y-5 mt-6 md:gap-x-6 md:gap-y-6 md:mt-7">
