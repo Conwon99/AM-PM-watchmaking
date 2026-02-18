@@ -7,13 +7,16 @@ import { QuoteSection } from '../sections/QuoteSection';
 import { FooterSection } from '../sections/FooterSection';
 ---
 
-<Layout>
+<Layout
+  title="Services & Pricing | Watch Repair Troon | AM/PM Watch Repair"
+  description="Watch repair and servicing prices in Troon. Part repairs, quartz and mechanical servicing, chronograph, Omega, Rolex. Fully insured workshop, fixed quotes."
+>
   <div class="min-h-screen bg-neutral-100 font-figtree text-black text-sm leading-5 antialiased">
-    <Navbar client:load />
+    <Navbar client:load lightBackground={true} />
     <main class="pt-0">
       <ServicePageHero client:load />
       <ServicesSection client:load />
-      <QuoteSection client:load showTerms={false} />
+      <QuoteSection client:load showTerms={false} phoneEventLocation="services" />
       <FooterSection client:load />
       {/* Imagery Disclaimer */}
       <div class="box-border caret-transparent py-8 text-center max-w-[800px] mx-auto px-5">

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap (update origin if using a different domain)
+Sitemap: https://ampmwatchrepair.com/sitemap.xml

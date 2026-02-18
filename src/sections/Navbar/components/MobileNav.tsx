@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-export const MobileNav = () => {
+export type MobileNavProps = {
+  lightBackground?: boolean;
+};
+
+export const MobileNav = ({ lightBackground }: MobileNavProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,15 +15,17 @@ export const MobileNav = () => {
     setIsOpen(false);
   };
 
+  const menuBtnColor = lightBackground ? "text-black" : "text-white";
+
   return (
     <>
       <button
         onClick={toggleMenu}
         aria-label="menu"
         aria-expanded={isOpen}
-        className="relative text-white text-2xl box-border caret-transparent block float-right min-h-[auto] min-w-[auto] p-3 md:hidden"
+        className={`relative ${menuBtnColor} text-2xl box-border caret-transparent block float-right min-h-[auto] min-w-[auto] p-3 md:hidden`}
       >
-        <div className="text-white box-border caret-transparent w-6 h-6">
+        <div className={`${menuBtnColor} box-border caret-transparent w-6 h-6`}>
           {isOpen ? (
             <svg
               className="w-6 h-6"
@@ -137,7 +143,10 @@ export const MobileNav = () => {
             <div className="box-border caret-transparent px-5 pb-5">
               <a
                 href="/contact"
-                onClick={closeMenu}
+                onClick={() => {
+                  typeof window !== 'undefined' && window.gtag?.('event', 'quoteButton_nav');
+                  closeMenu();
+                }}
                 className="text-white items-center bg-cta box-border caret-transparent gap-x-3 flex max-w-full gap-y-3 text-center border border-cta px-6 py-3 rounded-[100px] border-solid hover:bg-cta-dark w-full justify-center"
               >
                 <div className="relative box-border caret-transparent overflow-hidden">

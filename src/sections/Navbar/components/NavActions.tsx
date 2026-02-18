@@ -1,4 +1,12 @@
-export const NavActions = () => {
+export type NavActionsProps = {
+  lightBackground?: boolean;
+};
+
+export const NavActions = ({ lightBackground }: NavActionsProps) => {
+  const instagramClass = lightBackground
+    ? "text-black box-border caret-transparent hover:text-cta-dark"
+    : "text-white box-border caret-transparent hover:text-amber-200";
+
   return (
     <div className="items-center box-border caret-transparent flex basis-auto grow-0 shrink-0 justify-end justify-self-end md:basis-[0%] md:grow md:shrink">
       <div className="items-center box-border caret-transparent gap-x-3 hidden min-h-0 min-w-0 gap-y-1 md:flex md:min-h-[auto] md:min-w-[auto]">
@@ -54,7 +62,7 @@ export const NavActions = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="AM/PM Watch Repair on Instagram"
-              className="text-black box-border caret-transparent hover:text-cta-dark"
+              className={instagramClass}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +75,7 @@ export const NavActions = () => {
             <a
               href="/contact"
               className="text-black items-center bg-cta box-border caret-transparent gap-x-3 flex max-w-full min-h-0 min-w-0 gap-y-3 text-center border px-4 py-2 rounded-[100px] border-solid border-transparent md:min-h-[auto] md:min-w-[auto] hover:bg-white hover:border-cta-dark"
+              onClick={() => typeof window !== 'undefined' && window.gtag?.('event', 'quoteButton_nav')}
             >
               <div className="relative box-border caret-transparent min-h-0 min-w-0 overflow-hidden md:min-h-[auto] md:min-w-[auto]">
                 <div className="box-border caret-transparent">

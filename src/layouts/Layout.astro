@@ -1,18 +1,102 @@
 ---
 import '../styles/tailwind.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  noindex?: boolean;
+  image?: string;
+}
+
+const { title = 'Professional Watch Repair Troon | AM/PM Watch Repair', description = 'Expert watch repair and restoration in Troon, South Ayrshire. Omega, Rolex, TAG Heuer, Cartier, Breitling and more. Fully insured workshop, 10+ years experience.', canonical, noindex = false, image } = Astro.props;
+
+const site = import.meta.env.SITE?.replace(/\/$/, '') ?? 'https://ampmwatchrepair.com';
+const canonicalURL = canonical ?? `${site}${Astro.url.pathname}`;
+const ogImage = image ?? `${site}/ampmlogoedit.png`;
+
+const schemaLocalBusiness = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'AM/PM Watch Repair',
+  image: `${site}/ampmlogoedit.png`,
+  url: site,
+  telephone: '+447999169851',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Troon',
+    addressRegion: 'South Ayrshire',
+    addressCountry: 'GB',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 55.5390,
+    longitude: -4.6590,
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Troon' },
+    { '@type': 'State', name: 'South Ayrshire' },
+    { '@type': 'Country', name: 'United Kingdom' },
+  ],
+  priceRange: '££',
+  openingHoursSpecification: [],
+  sameAs: ['https://www.instagram.com/ampmwatch_repair/'],
+  description: 'Expert watch repair and restoration in Troon, South Ayrshire. Luxury watch servicing for Omega, Rolex, TAG Heuer, Cartier, Breitling, Seiko and more.',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Watch repair services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Part Repairs' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Watch Servicing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Vintage Watch Restoration' } },
+    ],
+  },
+};
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCK93YQZST"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-YCK93YQZST');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/ampmlogoedit.png" />
+    <link rel="apple-touch-icon" href="/ampmlogoedit.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>Professional Watch Repair Troon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bungee&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Luckiest+Guy&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex ? <meta name="robots" content="noindex, nofollow" /> : null}
+    <link rel="canonical" href={canonicalURL} />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="AM/PM Watch Repair" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <!-- Geo -->
+    <meta name="geo.region" content="GB-AYS" />
+    <meta name="geo.placename" content="Troon" />
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaLocalBusiness)}></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" /></noscript>
   </head>
   <body>
     <slot />

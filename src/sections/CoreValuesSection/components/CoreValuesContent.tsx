@@ -52,11 +52,9 @@ export const CoreValuesContent = () => {
           <div className="box-border caret-transparent gap-x-3 flex items-start gap-y-2">
             <div className="text-black items-center bg-neutral-200 box-border caret-transparent flex h-6 justify-center w-6 overflow-hidden rounded-[50%] shrink-0 mt-0.5">
               <div className="items-center box-border caret-transparent flex h-4 justify-center w-4">
-                <img
-                  src="https://c.animaapp.com/mhnzg6knJo6lE7/assets/icon-13.svg"
-                  alt="Icon"
-                  className="box-border caret-transparent h-full w-full"
-                />
+                <svg className="box-border caret-transparent h-full w-full text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
               </div>
             </div>
             <div className="text-[15px] box-border caret-transparent leading-6 text-gray-700 md:text-base">

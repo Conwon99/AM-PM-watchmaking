@@ -3,9 +3,16 @@ import { TermsAndConditions } from "./components/TermsAndConditions";
 
 export type QuoteSectionProps = {
   showTerms?: boolean;
+  /** When set, the phone link will fire this CTA event (e.g. 'hero' for home, 'services' for services page) */
+  phoneEventLocation?: 'hero' | 'services';
 };
 
-export const QuoteSection = ({ showTerms = true }: QuoteSectionProps) => {
+export const QuoteSection = ({ showTerms = true, phoneEventLocation }: QuoteSectionProps) => {
+  const onPhoneClick = () => {
+    if (typeof window === 'undefined') return;
+    if (phoneEventLocation === 'hero') window.gtag?.('event', 'phone_hero');
+    else if (phoneEventLocation === 'services') window.gtag?.('event', 'phone_services');
+  };
   return (
     <section id="contact" className="relative bg-cover bg-center bg-no-repeat pt-[120px] pb-[60px] md:pt-[150px] md:pb-[100px]" style={{ backgroundImage: `url('/g1.jpeg')` }}>
       <div className="absolute inset-0 bg-black/60"></div>
@@ -39,10 +46,11 @@ export const QuoteSection = ({ showTerms = true }: QuoteSectionProps) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <a 
-                    href="tel:+447828571986" 
+                    href="tel:+447999169851" 
                     className="text-white text-xl font-medium hover:text-cta transition-colors md:text-2xl"
+                    onClick={onPhoneClick}
                   >
-                    +44 7828 571986
+                    07999 169851
                   </a>
                 </div>
                 <div className="text-white/80 text-[15px] md:text-base">

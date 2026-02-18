@@ -11,7 +11,10 @@ import { QuoteSection } from '../sections/QuoteSection';
 import { FooterSection } from '../sections/FooterSection';
 ---
 
-<Layout>
+<Layout
+  title="Professional Watch Repair Troon | AM/PM Watch Repair"
+  description="Expert watch repair and restoration in Troon, South Ayrshire. Omega, Rolex, TAG Heuer, Cartier, Breitling and more. Fully insured workshop, 10+ years experience."
+>
   <div class="min-h-screen bg-neutral-100 font-figtree text-black text-sm leading-5 antialiased">
     <Navbar client:load />
     <main class="pt-0">
@@ -21,7 +24,7 @@ import { FooterSection } from '../sections/FooterSection';
       <GallerySection client:load />
       <ProcessSection client:load />
       <FAQSection client:load compact={true} />
-      <QuoteSection client:load showTerms={false} />
+      <QuoteSection client:load showTerms={false} phoneEventLocation="hero" />
       <FooterSection client:load />
     </main>
   </div>

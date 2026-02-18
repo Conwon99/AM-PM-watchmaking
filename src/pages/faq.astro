@@ -7,9 +7,12 @@ import { QuoteSection } from '../sections/QuoteSection';
 import { FooterSection } from '../sections/FooterSection';
 ---
 
-<Layout>
+<Layout
+  title="FAQ | Watch Repair Troon | AM/PM Watch Repair"
+  description="Frequently asked questions about watch repair and servicing in Troon. Postage, turnaround times, warranties and how to get a quote."
+>
   <div class="min-h-screen bg-neutral-100 font-figtree text-black text-sm leading-5 antialiased">
-    <Navbar client:load />
+    <Navbar client:load lightBackground={true} />
     <main class="pt-0">
       <FAQPageHero client:load />
       <FAQSection client:load compact={false} />

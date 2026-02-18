@@ -1,10 +1,14 @@
-export const Logo = () => {
+export type LogoProps = {
+  lightBackground?: boolean;
+};
+
+export const Logo = ({ lightBackground }: LogoProps) => {
   return (
     <div className="box-border caret-transparent basis-[0%] grow">
       <a
         href="/"
         aria-label="home"
-        className="relative text-white box-border caret-transparent block float-left h-16 max-h-16 overflow-hidden md:h-20 md:max-h-20"
+        className={`relative ${lightBackground ? "text-black" : "text-white"} box-border caret-transparent block float-left h-16 max-h-16 overflow-hidden md:h-20 md:max-h-20`}
       >
         <div className="box-border caret-transparent">
           <img
